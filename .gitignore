@@ -22,3 +22,5 @@ dump.rdb
 
 /config/database.yml
 /config/secrets.yml
+
+/postgresql/data/*

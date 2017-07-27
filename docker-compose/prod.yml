@@ -1,6 +1,6 @@
 version: '3'
 services:
-  hub6-service:
+  oneclass_library:
     container_name: oneclass_library
     image: oneclass_library
     build: ..
