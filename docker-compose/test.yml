@@ -1,0 +1,16 @@
+version: '3'
+services:
+  hub6-service:
+    container_name: oneclass_library
+    image: oneclass_library
+    build: ..
+    command: bundle exec rspec
+    volumes:
+      - ..:/var/www/oneclass_library
+    environment:
+      - RAILS_ENV=test
+    depends_on:
+      pg-database
+
+  pg-database:
+    image: postgres
